@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Caesar Cipher :: Secure Console</title>
+</head>
+
+<body>
+
+    <h1>Caesar Cipher :: Secure Console</h1>
+
+    <form id="fid1">
+        <label for="entry">[ INPUT PAYLOAD ]</label><br>
+        <textarea
+            name="entry"
+            id="entry"
+            rows="10"
+            placeholder="> Enter plaintext / ciphertext here..."
+        ></textarea><br>
+
+        <label for="key">[ SHIFT KEY ]</label><br>
+        <input
+            type="number"
+            id="key"
+            name="key"
+            placeholder="0 - 25"
+        ><br>
+    </form>
+
+    <div class="button-flex">
+        <button
+            type="button"
+            form="fid1"
+            id="encrypt"
+            name="encrypt"
+            onClick="main(1)"
+        >
+             ENCRYPT
+        </button>
+
+        <button
+            type="button"
+            form="fid1"
+            id="decrypt"
+            name="decrypt"
+            onClick="main(2)"
+        >
+             DECRYPT
+        </button>
+    </div>
+
+    <output id="output"></output>
+
+    <!-- Logic stays untouched -->
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
